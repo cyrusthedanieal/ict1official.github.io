@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+
+<link href ="file:///C:/Users/althe/OneDrive/layout/website.css" rel="stylesheet" name="css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush|Eczar|Yeseva One">
+
+
+
+<style>
+
+.card {
+  box-shadow: 2px 8px 10px 2px Pink;
+  padding: 16px;
+  text-align: center;
+  background-color: #FFF5EE;
+  width: 400px;
+border-radius: 10px;
+margin-left: 20%;
+
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+
+button{
+  width: 100px;
+background-color: #FFFDD0;
+border-radius:8px;
+border-color:PaleVioletRed;
+}
+
+h2{
+text-align:center; 
+font-family:"Yeseva One", sans-serif; 
+text-shadow: 4px 4px #6F8FAF; 
+font-size: 70px; 
+color:#FFF8DC;
+}
+
+*{
+color: #5c4033;
+font-family: "Eczar", sans-serif;
+}
+
+
+body{
+background-image: url("pictures/places-bg.png"); 
+background-color:#FFE5B4;
+}
+
+</style>
+
+
+
+   
+</head>
+<body>
+    <ul>
+      <ul>
+        <li><a class="active" href="homepage.html">Home</a></li>
+       
+      </ul>
+        
+      </ul>
+
+
+<h2>Booking</h2>
+
+      
+
+      <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>ROOM 1</h3>
+            <img src="MISIBIS BAY RESORT 2.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(5500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(5500)">-</button>
+
+            <h4>5500</h4>
+          </div>
+        </div>
+      
+  <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+        <div class="column">
+          <div class="card">
+            <h3>ROOM 2</h3>
+            <img src="MISIBIS BAY RESORT 6.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(6500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(6500)">-</button>
+            <h4>6500</h4>
+          </div>
+        </div>
+        
+  <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+        <div class="column">
+          <div class="card">
+            <h3>Spa Room</h3>
+            <img src="MISIBIS BAY RESORT 9.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(7500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(7500)">-</button>
+            <h4>7500</h4>
+          </div>
+        </div>
+
+
+        <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+        
+        <div class="column">
+          <div class="card">
+            <h3>ROOM 1</h3>
+            <img src="ROOM 1 MBR.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(2500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(2500)">-</button>
+            <h4>2500</h4>
+          </div>
+        </div>
+   
+  <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>ROOM 2</h3>
+            <img src="ROOM 2 MBR.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(3500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(3500)">-</button>
+            <h4>3500</h4>
+          </div>
+        </div>
+      
+  <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+        <div class="column">
+          <div class="card">
+            <h3>ROOM 3</h3>
+            <img src="ROOM 3 MBR.jpeg" width="300px" height="300px">
+            <button type="button" onclick="addTheValue(4500)">Add Day </button>
+            <button type="button" onclick="subtractTheValue(4500)">-</button>
+            <h4>4500</h4>
+          </div>
+        </div>
+
+ 
+
+        <center> <a href="forms.html"><button style="font-size:25px; width:130px;">Check Out</button>
+
+<p style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</p>
+
+<button style="font-size:25px; width:130px;"><b id="firstValue">0</b></button></a>
+
+
+        
+
+
+        <script>
+          function addTheValue(secondValue) {
+              var fValue = document.getElementById("firstValue");
+              firstValue.innerHTML = parseInt(fValue.innerHTML) + parseInt(secondValue);
+          }
+          function subtractTheValue(secondValue) {
+              var fValue = document.getElementById("firstValue");
+              firstValue.innerHTML = parseInt(fValue.innerHTML) - parseInt(secondValue);
+          }
+      </script>
+        
+        

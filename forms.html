@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style1.css">
+
+<link href ="website.css" rel="stylesheet" name="css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush|Eczar|Yeseva One">
+
+<style>
+*{
+color: #5c4033;
+font-family: "Eczar", sans-serif;
+}
+
+h2{
+text-align:center; 
+font-family:"Yeseva One", sans-serif; 
+text-shadow: 3px 3px #DAA06D; 
+font-size: 70px; 
+color:Pink;
+}
+
+button{
+  width: 160px;
+background-color: #F5DEB3;
+border-radius:8px;
+border-color:#6F4E37;
+color: #80461B;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <ul>
+ <li><a href="website.html">Home</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="history.html">History</a></li>
+        <li ><a href="food.html">Food</a></li>
+        <li><a href="places.html">Places</a>
+        <li ><a class="active" href="economic.html">Economical State</a></li>
+      
+    <li><a class="active" href="homepage.html">Hotels</a></li>
+<li><a class="active" href="sales.html">Sales</a></li>
+
+<li ><a class="active" href="reference.html">References</a></li>
+ <li style="float:right"><a class="active" href="1CTZENS.html">1CTZENS	</a></li>
+        </ul>
+  </ul>
+      
+<h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+      <h2>Payment Form</h2>
+
+      <a style="background-color: Pink;" href="homepage.html"><button>Return Home Page</button></a>
+<br> <br>
+<a background-color: Pink;" href="check out 2.0.html"><button>Return Booking Page</button></a>
+
+
+      <h1 style="visibility: hidden;">HAHAHAHAHAHAHAHAHAHAHAHHAAH</h1>
+    
+      <div class="container">
+        <form>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+
+
+<form action="" method="post">
+      
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>children <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+
+      <div class="col-50">
+        <h3>Payment</h3>
+        <label for="fname">Accepted Cards</label>
+        <div class="icon-container">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div>
+        <label for="cname">Name on Card</label>
+        <input type="text" id="cname" name="cardname" placeholder="Name">
+        <label for="ccnum">Credit card number</label>
+        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+        <label for="expmonth">Exp Month</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+        <div class="row">
+          <div class="col-50">
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2018">
+          </div>
+          <div class="col-50">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="352">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+    <h1 id="demo">Status!!</h1>
+     
+   
+
+  
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Your form was already submitted. Receipt will be sent to your credit card account. Thank You!"'>Check Out</button>
+
+   </script>
